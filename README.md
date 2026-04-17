@@ -30,7 +30,7 @@ Take pixel-perfect screenshots of any website URL — desktop, mobile, or tablet
 ## Installation
 
 ```bash
-openclaw plugins install clawhub:pdfapihub-screenshot
+openclaw plugins install clawhub:pdf-api-screenshot
 ```
 
 ## Configuration
@@ -41,7 +41,7 @@ Add your API key in `~/.openclaw/openclaw.json`:
 {
   "plugins": {
     "entries": {
-      "pdfapihub-screenshot": {
+      "pdf-api-screenshot": {
         "enabled": true,
         "env": {
           "PDFAPIHUB_API_KEY": "your-api-key-here"
