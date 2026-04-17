@@ -37,7 +37,7 @@ Configure in `~/.openclaw/openclaw.json`:
 }
 ```
 
-Or set the environment variable: `export PDFAPIHUB_API_KEY=your-api-key`
+Or set the environment variable in config: `"env": { "PDFAPIHUB_API_KEY": "your-key" }`
 
 ## Usage Examples
 
