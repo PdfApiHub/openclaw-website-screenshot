@@ -1,0 +1,39 @@
+{
+  "name": "website-screenshot",
+  "version": "1.0.0",
+  "description": "Capture website screenshots as PNG images. Supports full-page scrolling, custom viewports (desktop/mobile/tablet), retina quality, cookie consent auto-click, wait strategies for JS-rendered pages, and image compression. Powered by PDFAPIHub.",
+  "type": "module",
+  "main": "index.ts",
+  "keywords": [
+    "openclaw",
+    "website-screenshot",
+    "screenshot",
+    "url-to-image",
+    "webpage-capture",
+    "full-page-screenshot",
+    "headless-chromium",
+    "pdfapihub",
+    "clawhub",
+    "ai-agent",
+    "web-scraping"
+  ],
+  "author": "PDFAPIHub <hello@pdfapihub.com>",
+  "license": "MIT",
+  "homepage": "https://pdfapihub.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PdfApiHub/openclaw-website-screenshot"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "skills": ["./skills"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  }
+}
