@@ -1,5 +1,5 @@
 {
-  "name": "webpage-screenshot",
+  "name": "pdfapihub-screenshot",
   "version": "1.0.0",
   "description": "Capture website screenshots as PNG images. Supports full-page scrolling, custom viewports (desktop/mobile/tablet), retina quality, cookie consent auto-click, wait strategies for JS-rendered pages, and image compression. Powered by PDFAPIHub.",
   "type": "module",
