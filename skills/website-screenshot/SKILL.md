@@ -20,13 +20,30 @@ Capture screenshots of any website as PNG images with full control over viewport
 
 Get your **free API key** at [https://pdfapihub.com](https://pdfapihub.com).
 
-Configure in `~/.openclaw/openclaw.json`:
+**Privacy note:** URLs you screenshot are sent to PDFAPIHub servers for rendering via headless Chromium. Screenshots are stored for 30 days then auto-deleted.
+
+Configure your API key in `~/.openclaw/openclaw.json`:
 
 ```json
 {
   "plugins": {
     "entries": {
-      "website-screenshot": {
+      "pdf-api-screenshot": {
+        "enabled": true,
+        "apiKey": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+Or use the `env` approach (OpenClaw injects it into `config.apiKey` automatically):
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "pdf-api-screenshot": {
         "enabled": true,
         "env": {
           "PDFAPIHUB_API_KEY": "your-api-key-here"
@@ -36,8 +53,6 @@ Configure in `~/.openclaw/openclaw.json`:
   }
 }
 ```
-
-Or set the environment variable in config: `"env": { "PDFAPIHUB_API_KEY": "your-key" }`
 
 ## Usage Examples
 

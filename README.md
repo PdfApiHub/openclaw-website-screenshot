@@ -35,7 +35,22 @@ openclaw plugins install clawhub:pdf-api-screenshot
 
 ## Configuration
 
-Add your API key in `~/.openclaw/openclaw.json`:
+**Privacy note:** URLs you screenshot are sent to PDFAPIHub servers for rendering. Screenshots are stored for 30 days then auto-deleted.
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "pdf-api-screenshot": {
+        "enabled": true,
+        "apiKey": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+Or use the `env` approach:
 
 ```json
 {

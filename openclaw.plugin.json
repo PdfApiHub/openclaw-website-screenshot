@@ -14,11 +14,18 @@
   },
   "configSchema": {
     "type": "object",
+    "required": ["apiKey"],
     "properties": {
       "apiKey": {
         "type": "string",
-        "description": "PDFAPIHub API key. Get a free key at https://pdfapihub.com"
+        "description": "PDFAPIHub API key (required). Get a free key at https://pdfapihub.com. URLs you screenshot are sent to PDFAPIHub servers for rendering."
       }
+    }
+  },
+  "metadata": {
+    "openclaw": {
+      "primaryEnv": "PDFAPIHUB_API_KEY",
+      "requires": { "env": ["PDFAPIHUB_API_KEY"] }
     }
   }
 }
